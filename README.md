@@ -91,3 +91,72 @@ C++ proqramlaşdırma dilində Vector, Stack, Queue, Dequeue, Set, Multiset, Map
 ---
 
 Bu konteynerlər C++-də müxtəlif məlumat növlərini səmərəli idarə etmək və saxlamaq üçün geniş istifadə olunur. Hər biri müəyyən spesifik vəziyyətlərdə digərinə nisbətən daha uyğun ola bilər.
+
+
+# Verilənlər Strukturlarının Real Həyatda İstifadə Nümunələri
+
+## 1. Vector
+**İstifadə sahəsi:**  
+`std::vector` dinamik massiv kimi istifadə olunur və elementlərin sayı əvvəlcədən məlum olmadıqda çox faydalıdır.
+
+**Real həyat nümunəsi:**  
+- **Mobil Tətbiqdə Şəkil Qalereyası:** Telefonun şəkil qalereyasındakı şəkillər dinamik olaraq artır və ya silinir. `vector` bu şəkilləri saxlamaq üçün uyğundur, çünki ölçüsü dinamik olaraq dəyişir.
+
+---
+
+## 2. Stack
+**İstifadə sahəsi:**  
+`std::stack` LIFO (Last In, First Out) prinsipinə uyğun olaraq işləyir.
+
+**Real həyat nümunəsi:**  
+- **Brauzer Geri və İrəli Düymələri:** Brauzerdə geri və irəli düymələri `stack` strukturu ilə həyata keçirilir. Geri düyməsi basıldıqda sonuncu ziyarət edilən səhifə (yəni ən son əlavə edilən) göstərilir.
+
+---
+
+## 3. Queue
+**İstifadə sahəsi:**  
+`std::queue` FIFO (First In, First Out) prinsipinə əsaslanır.
+
+**Real həyat nümunəsi:**  
+- **Printer Növbəsi:** Çap etmək üçün göndərilən sənədlər birinci göndərilən sənədin birinci çap olunması qaydası ilə işləyir. Bu proses `queue` strukturu vasitəsilə idarə olunur.
+
+---
+
+## 4. Deque (Double-ended Queue)
+**İstifadə sahəsi:**  
+`std::deque` həm əvvəlindən, həm də sonundan element əlavə etməyə və çıxarmağa imkan verir.
+
+**Real həyat nümunəsi:**  
+- **Task Scheduler:** Taskların başlanğıc və sonundan əlavə edilərək prioritetlə işlənməsi lazımdırsa, məsələn, əməliyyat sistemlərində proseslərin idarə olunmasında `deque` istifadə edilə bilər.
+
+---
+
+## 5. Set
+**İstifadə sahəsi:**  
+`std::set` unikal və sıralanmış elementləri saxlamaq üçün istifadə olunur.
+
+**Real həyat nümunəsi:**  
+- **Telefon Kontaktları:** Telefon kontaktlarında eyni adın təkrarlanmaması üçün `set` istifadə edilə bilər, çünki `set` yalnız unikal elementləri saxlayır.
+
+---
+
+## 6. Multiset
+**İstifadə sahəsi:**  
+`std::multiset` təkrarlanan elementləri saxlamaq üçün uyğundur.
+
+**Real həyat nümunəsi:**  
+- **İmtahan Nəticələri:** Tələbələrin əldə etdiyi ballar eyni ola bilər. Hər bir balın sayını izləmək üçün `multiset` istifadə edilə bilər.
+
+---
+
+## 7. Map
+**İstifadə sahəsi:**  
+`std::map` açar-dəyər (key-value) cütlərini saxlamaq üçün istifadə olunur.
+
+**Real həyat nümunəsi:**  
+- **Telefon Kitabçası:** Ad və telefon nömrələrini saxlamaq üçün `map` istifadə edilir. Ad açar, telefon nömrəsi isə dəyər kimi saxlanılır.
+
+---
+
+## Xülasə
+Bu verilənlər strukturları müxtəlif tətbiqlərdə effektiv məlumat idarəetməsini təmin edir. Hər biri spesifik problemlərin həllində daha uyğun seçim ola bilər.
